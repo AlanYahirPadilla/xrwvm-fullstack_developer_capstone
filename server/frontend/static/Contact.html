@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Best Cars</title>
+    <!-- Enlaces a las hojas de estilo requeridas -->
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    
+    <style>
+        /* Estilos generales de modo oscuro */
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        /* Acento lila para el enlace activo en la barra de navegación */
+        .navbar-dark .navbar-nav .active > .nav-link {
+            color: #b482fa !important;
+            font-weight: bold;
+        }
+
+        /* Tarjeta de contacto con efecto Glassmorphism */
+        .contact-card {
+            background: rgba(40, 40, 40, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(180, 130, 250, 0.4);
+            border-radius: 16px;
+            padding: 40px;
+            margin: 60px auto;
+            max-width: 550px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #b482fa;
+        }
+
+        .contact-info p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación con "Contact Us" como enlace activo -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Best Cars</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about/">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/contact/">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido de la información de contacto -->
+    <div class="container">
+        <div class="contact-card">
+            <h2 class="contact-header">Ponte en contacto</h2>
+            <div class="contact-info">
+                <p><strong>📍 Sede Principal:</strong> 123 Innovation Drive, Tech District</p>
+                <p><strong>📞 Soporte de Ventas:</strong> +52 33 1234 5678</p>
+                <p><strong>✉️ Correo Electrónico:</strong> soporte@bestcars.ejemplo.com</p>
+                <p><strong>🕒 Horario de Atención:</strong> Lunes a Viernes, 9:00 AM - 6:00 PM</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
